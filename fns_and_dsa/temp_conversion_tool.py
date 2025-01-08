@@ -8,14 +8,14 @@ def convert_to_celsius(fahrenheit):
     Convert a temperature from Fahrenheit to Celsius using the global conversion factor.
     """
     # Apply the formula: (F - 32) * (5 / 9)
-    return (fahrenheit - FAHRENHEIT_OFFSET)*FAHRENHEIT_TO_CELSIUS_FACTOR
+    return (fahrenheit - FAHRENHEIT_OFFSET) * (5/9)
 
 def convert_to_fahrenheit(celsius):
     """
     Convert a temperature from Celsius to Fahrenheit using the global conversion factor.
     """
     # Apply the formula: (C * 9 / 5) + 32
-    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR)+FAHRENHEIT_OFFSET
+    return (celsius * 9/5) + FAHRENHEIT_OFFSET
 
 def main():
     try:
