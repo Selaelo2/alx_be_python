@@ -4,7 +4,6 @@ class Book:
         self.title = title
         self.author = author
         self.year = year
-        print(f"Creating Book: {self.title} by {self.author}, published in {self.year}")
 
     # Destructor method (__del__)
     def __del__(self):
@@ -17,4 +16,3 @@ class Book:
     # Official representation method (__repr__)
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
-
